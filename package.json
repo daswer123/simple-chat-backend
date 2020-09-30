@@ -1,0 +1,31 @@
+{
+  "name": "simple-chat-node-socket",
+  "version": "0.0.4",
+  "description": "Simple chat with Node JS and Socket IO",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node index.js",
+    "dev"   : "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daswer123/Simple-Chat-node-socket.git"
+  },
+  "keywords": [
+    "nodejs",
+    "socketio",
+    "react"
+  ],
+  "author": "daswer123 <daswerq123@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daswer123/Simple-Chat-node-socket/issues"
+  },
+  "homepage": "https://github.com/daswer123/Simple-Chat-node-socket#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
