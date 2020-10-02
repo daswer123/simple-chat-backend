@@ -61,7 +61,7 @@ const PORT = process.env.PORT || 8080
 
 const start = async () =>{
     try {
-        await mongoose.connect(process.env.MONGODB_URI
+        await mongoose.connect("mongodb+srv://daswer_chat:4ZhJjpyYh1PN3wOw@cluster0.4jm4e.mongodb.net/simple-chat?retryWrites=true&w=majority"
         ,{
             useNewUrlParser : true,
             useUnifiedTopology : true,
