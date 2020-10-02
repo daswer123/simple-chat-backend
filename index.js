@@ -27,16 +27,18 @@ io.on("connection", socket => {
         room[0].messages.push(message)
         await room[0].save();
 
-        socket.broadcast.emit("send-message", ({message,roomName : room[0].roomName}));
+        socket.to(room[0].roomName).broadcast.emit("send-message", ({message,roomName : room[0].roomName}));
     })
 
     socket.on("new-user",(user) => {
-        io.emit("new-user",user)
+        socket.join(user.roomName)
+        io.to(user.roomName).emit("new-user",user)
     })
 
     
     socket.on("disconnect", async () => {
         const room = await Rooms.find({ "users" : { $elemMatch : {"socketId" : socket.id}}});
+        
         if (room.length === 0){
             return
         }
@@ -46,7 +48,7 @@ io.on("connection", socket => {
         room[0] = fixedRoom
         await room[0].save()
 
-        io.emit("user-leave",{users : fixedRoom.users, roomName : fixedRoom.roomName})
+        io.to(room[0].roomName).emit("user-leave",{users : fixedRoom.users, roomName : fixedRoom.roomName})
         console.log("user disconected")
 
         socket.removeAllListeners();
