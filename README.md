@@ -15,4 +15,4 @@
 
 Клиентская часть находится по ссылке : https://github.com/daswer123/simple-chat-frontend . В этом репозитории находится более подробный showcase.
 
-Демонтрацию работы сайта вы можете посмотреть по видео [Demonstation](https://www.youtube.com/watch?v=IxR3XQjxIcg)(по ссылке)
+Демонтрацию работы сайта вы можете посмотреть по видео [по ссылке](https://www.youtube.com/watch?v=IxR3XQjxIcg)
