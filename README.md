@@ -13,6 +13,5 @@
  * [Nodemon](https://www.npmjs.com/package/nodemon)
  * [uuid](https://www.npmjs.com/package/uuid)
 
-Клиентская часть находится по ссылке : https://github.com/daswer123/simple-chat-frontend . В этом репозитории находится более подробный showcase.
-
+Клиентская часть находится по ссылке : https://github.com/daswer123/simple-chat-frontend.
 Демонтрацию работы сайта вы можете посмотреть по видео [по ссылке](https://www.youtube.com/watch?v=IxR3XQjxIcg)
